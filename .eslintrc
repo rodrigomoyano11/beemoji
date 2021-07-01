@@ -1,0 +1,59 @@
+{
+  "ignorePatterns": [
+    "build/*",
+    "**/react-app-env.d.ts",
+    "**/reportWebVitals.ts",
+    "**/service-worker.ts",
+    "**/serviceWorkerRegistration.ts"
+  ],
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["airbnb", "react-app", "react-app/jest"],
+
+  "rules": {
+    "semi": ["error", "never"],
+
+    "comma-dangle": ["warn", "never"],
+
+    "react/prop-types": "off",
+    "no-nested-ternary": "off",
+    "react/jsx-filename-extension": ["warn", { "extensions": [".tsx"] }],
+    "react/react-in-jsx-scope": "off",
+
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+
+    "import/order": [
+      "warn",
+      {
+        "groups": ["builtin", "external", "internal"],
+        "pathGroups": [
+          {
+            "pattern": "react",
+            "group": "external",
+            "position": "before"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["react"],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
+  }
+}
