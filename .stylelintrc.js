@@ -1,7 +1,7 @@
 const sortOrderSmacss = require('stylelint-config-property-sort-order-smacss/generate')
 
 module.exports = {
-  extends: ['stylelint-config-standard'],
+  extends: ['stylelint-config-standard', 'prettier'],
   plugins: ['stylelint-order'],
   rules: {
     'no-eol-whitespace': [true, { ignore: ['empty-lines'] }],
