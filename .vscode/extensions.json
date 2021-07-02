@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "pkief.material-icon-theme", // Icons theme
+    "dbaeumer.vscode-eslint", // JS Linter
+    "stylelint.vscode-stylelint", // CSS Linter
+    "esbenp.prettier-vscode", // Formatter
+    "mhutchie.git-graph", // View a Git graph
+    "christian-kohler.npm-intellisense", // npm autocomplete
+    "usernamehw.errorlens", // Show errors, warnings and others highlighting lines
+    "pflannery.vscode-versionlens" // Show and apply updates directly from "package.json"
+  ]
+}
