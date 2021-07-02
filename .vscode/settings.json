@@ -1,0 +1,37 @@
+{
+  // Excluded files and folders
+  "files.exclude": {
+    // Dependencies
+    "node_modules/": true,
+    ".yarn/": true,
+    "package-lock.json": true,
+    "yarn.lock": true,
+    ".yarnrc.yml": true,
+
+    // Formatter
+    ".prettierrc": true,
+    ".prettierignore": true,
+
+    // Linter
+    ".eslintrc": true,
+    ".eslintcache": true,
+    ".stylelintrc.js": true,
+    ".stylelintcache": true,
+
+    // Tests
+    "**/*.test.tsx": true,
+    "**/setupTests.ts": true,
+
+    // PWA
+    "**/service-worker.ts": true,
+    "**/serviceWorkerRegistration.ts": true,
+
+    // Storybook
+    ".storybook/": true,
+
+    // Others
+    "README.md": true,
+    "**/reportWebVitals.ts": true,
+    ".husky/": true
+  }
+}
