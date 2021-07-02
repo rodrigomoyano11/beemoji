@@ -32,6 +32,8 @@
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-import-resolver-typescript": "^2.4.0",
+    "husky": "^7.0.0",
+    "lint-staged": "^11.0.0",
     "prettier": "^2.3.2",
     "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^8.0.2",
@@ -45,7 +47,13 @@
     "lint:css": "stylelint --cache **/*.{css,sccs}",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "eslint --cache --fix",
+    "*.css": "stylelint --cache --fix",
+    "*.{js,jsx,ts,tsx,css,html,json,md,yml}": "prettier --write"
   },
   "browserslist": {
     "production": [
